@@ -80,7 +80,7 @@ header .menu {
 }
 
 header .menu__item {
-    border: 2px solid var(--principal);
+    /* border: 2px solid var(--principal); */
     transition: border-color .5s ease-in-out;
 }
 
@@ -101,6 +101,7 @@ header .menu__item:hover {
     display: none;
     position: absolute;
 }
+
 .sub-menu__item {
     padding: 10px 0px;
 }
@@ -227,10 +228,6 @@ header {
     justify-items: center;
 }
 
-.logo2__link {
-    position: relative;
-}
-
 .paragraph__banner2 {
     color: #000000;
     font-family: var(--font-secondary);
@@ -282,7 +279,7 @@ header {
 }
 
 
-.principal5 > div {
+.principal5>div {
     background-color: #6d6d6a;
     display: flex;
     align-items: center;
@@ -295,7 +292,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 350px);
     gap: 10px;
-    min-height:0vh;
+    min-height: 0vh;
 }
 
 .principal7 {
@@ -303,10 +300,10 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 50px);
     gap: 10px;
-    min-height:0vh;
+    min-height: 0vh;
 }
 
-.principal7 > div {
+.principal7>div {
     padding: 0px 0;
     font-size: 1.8em;
     margin: 0px 0px;
@@ -318,7 +315,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 350px);
     gap: 10px;
-    min-height:0vh;
+    min-height: 0vh;
 }
 
 .principal9 {
@@ -326,10 +323,10 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 50px);
     gap: 10px;
-    min-height:0vh;
+    min-height: 0vh;
 }
 
-.principal9 > div {
+.principal9>div {
     padding: 0px 0;
     font-size: 1.8em;
     margin: 0px 0px;
@@ -341,7 +338,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 350px);
     gap: 10px;
-    min-height:0vh;
+    min-height: 0vh;
 }
 
 .principal11 {
@@ -349,10 +346,10 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 50px);
     gap: 10px;
-    min-height:0vh;
+    min-height: 0vh;
 }
 
-.principal11 > div {
+.principal11>div {
     padding: 0px 0;
     font-size: 1.8em;
     margin: 0px 0px;
@@ -363,7 +360,7 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 100px);
-    min-height:0vh;
+    min-height: 0vh;
     color: #000000;
 }
 
@@ -566,7 +563,234 @@ header {
     height: 100%;
 }
 
+/* Animaciones */
+
+.principal>div {
+    background-image: linear-gradient(#39A2AE, black);
+}
+
+.principal2>div {
+    background-image: linear-gradient(#6d6d6a, black);
+}
+
+.principal5>div {
+    background-image: linear-gradient(#6d6d6a, black);
+}
+
+.contact1 {
+    background-image: linear-gradient(#6d6d6a, black);
+}
+
+.content6 {
+    color: var(--secondary);
+}
+
+.content7 {
+    color: var(--secondary);
+}
+
+.principal12>div {
+    background-image: linear-gradient(#6d6d6a, black);
+}
+
+.parrafo__pagos {
+    color: var(--secondary);
+}
+
+.navbar {
+    background-image: radial-gradient(circle, #dcdeec, #aebacc, #7f99ab, #4f7988, #1c5a62);
+}
+
+
+.logo2__link {
+    transform: translateY(-350px);
+}
+
+.principal6 {
+    overflow: hidden;
+}
+
+.principal8 {
+    overflow: hidden;
+}
+
+.principal10 {
+    overflow: hidden;
+}
+
+.imagen__pmp:hover {
+    width: 105%;
+    height: 105%;
+    transition: width 1s ease-in-out;
+}
+
+.imagen__acp:hover {
+    width: 105%;
+    height: 105%;
+    transition: width 1s ease-in-out;
+}
+
+.imagen__advanced:hover {
+    width: 105%;
+    height: 105%;
+    transition: width 1s ease-in-out;
+}
+
+.imagen__train:hover {
+    width: 105%;
+    height: 105%;
+    transition: width 1s ease-in-out;
+}
+
+.imagen__itil:hover {
+    width: 105%;
+    height: 105%;
+    transition: width 1s ease-in-out;
+}
+
+.imagen__scrum:hover {
+    width: 105%;
+    height: 105%;
+    transition: width 1s ease-in-out;
+}
+
+.imagen__producto:hover {
+    width: 105%;
+    height: 105%;
+    transition: width 1s ease-in-out;
+}
+
+.logo:hover {
+    width: 45%;
+    transition: width 3 ease-in-out;
+}
+
+.icon {
+    animation-name: crazyicon;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+}
+
+.social__media {
+    animation-name: crazyicon1;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+}
+
+.menu__item {
+    animation-name: menuloco;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+}
+
+
+@keyframes crazyicon {
+    0% {
+        transform: rotate(-150deg);
+        position: relative;
+        right: 100px;
+    }
+
+    25% {
+        transform: rotate(-200deg);
+        position: relative;
+        right: 75px;
+    }
+
+    50% {
+        transform: rotate(-250deg);
+        position: relative;
+        right: 50px;
+    }
+
+    75% {
+        transform: rotate(-300deg);
+        position: relative;
+        right: 25px;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+        position: relative;
+        right: 0px;
+    }
+
+
+}
+
+@keyframes menuloco {
+    0% {
+        transform: rotate(-150deg);
+        position: relative;
+        right: 100px;
+    }
+
+    25% {
+        transform: rotate(-200deg);
+        position: relative;
+        right: 75px;
+    }
+
+    50% {
+        transform: rotate(-250deg);
+        position: relative;
+        right: 50px;
+    }
+
+    75% {
+        transform: rotate(-300deg);
+        position: relative;
+        right: 25px;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+        position: relative;
+        right: 0px;
+    }
+
+
+}
+
+@keyframes crazyicon1 {
+    0% {
+        transform: rotate(-150deg);
+        position: relative;
+        right: 100px;
+    }
+
+    25% {
+        transform: rotate(-200deg);
+        position: relative;
+        right: 75px;
+    }
+
+    50% {
+        transform: rotate(-250deg);
+        position: relative;
+        right: 50px;
+    }
+
+    75% {
+        transform: rotate(-300deg);
+        position: relative;
+        right: 25px;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+        position: relative;
+        right: 0px;
+    }
+
+
+}
+
 /* Footer */
+
 .footer {
     background-color: black;
     min-height: 10vh;
@@ -742,7 +966,7 @@ textarea {
         grid-template-rows: repeat(2, 1fr);
     }
 
-    .principal5 > div {
+    .principal5>div {
         background-color: #6d6d6a;
         display: flex;
         align-items: center;
@@ -769,7 +993,7 @@ textarea {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
     }
-   
+
     .red__social li {
         display: inline-block;
         padding: 2px;
