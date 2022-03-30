@@ -19,8 +19,8 @@
     --secondary: #ffffff;
     --font-primary: "Smooch Sans", sans-serif;
     --font-secondary: "Bowlby One SC", cursive;
-    --text-lg: 2em;
-    --tex-md: 2em;
+    --text-lg: 3em;
+    --tex-md: 3em;
 }
 
 
@@ -29,6 +29,12 @@ html {
     font-size: 62.5%;
     font-family: var(--font-primary);
     color: var(--secondary);
+}
+
+body {
+    color: var(--secondary);
+    font-family: var(--font-primary);
+    font-size: 62.5%;
     background-color: #f2f3f2;
 }
 
@@ -39,6 +45,10 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a:hover {
+    color: var(--secondary);
 }
 
 /* Helpers */
@@ -53,21 +63,24 @@ a {
 }
 
 .container {
-    max-width: auto;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 /* Header */
 
 header {
+    position: sticky;
+    top: 0;
     background-color: var(--principal);
 }
 
 header .navbar {
-    min-height: 10vh;
+    /* min-height: 10vh;     */
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+    font-size: 3em;
 }
 
 header .logo {
@@ -80,7 +93,7 @@ header .menu {
 }
 
 header .menu__item {
-    /* border: 2px solid var(--principal); */
+    border: 2px solid transparent;
     transition: border-color .5s ease-in-out;
 }
 
@@ -108,7 +121,7 @@ header .menu__item:hover {
 
 .sub-menu__link {
     padding: 1rem;
-    font-size: 1.8em;
+    font-size: 2.8em;
     transition: all ease-in-out;
 }
 
@@ -124,14 +137,26 @@ header .menu__item:hover {
     color: var(--secondary);
     padding: 0px 20px;
     list-style-type: none;
-    font-size: 1.3em;
+    font-size: 2em;
     text-align: justify;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 1000;
+}
+
+ol, ul {
+    padding-left: 0rem;
+}
 
 h1 {
     font-family: var(--font-primary);
-    font-size: 3em;
+    font-size: 4em;
     margin: 0 0;
     padding: 0 0;
     background-color: rgba(0, 198, 248, 0.459);
@@ -140,6 +165,7 @@ h1 {
     justify-content: center;
 
 }
+
 
 .logo {
     height: 50px;
@@ -196,25 +222,25 @@ h1 {
     color: aliceblue;
     border-color: transparent;
     font-family: var(--font-primary);
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 .button__click1 {
     border-radius: 5px;
-    height: 35px;
+    height: 30px;
     width: 130px;
-    margin: 5px 300px 0px;
+    margin: -15px 300px 0px;
     background-color: #3483fa;
     color: aliceblue;
     border-color: transparent;
     font-family: var(--font-primary);
-    font-size: 2em;
+    font-size: 3em;
 }
 
-header {
+/* header {
     position: fixed;
     width: 100%;
-}
+} */
 
 .banner2__link {
     width: 100%;
@@ -262,6 +288,7 @@ header {
     background-color: #6d6d6a;
     display: flex;
     align-items: center;
+    height: 10vh;
 }
 
 .principal4 {
@@ -386,7 +413,7 @@ header {
     color: var(--secondary);
     display: flex;
     align-content: center;
-    font-size: 3em;
+    font-size: 5em;
     padding: 0 20px;
     background-color: #000000;
 }
@@ -404,7 +431,7 @@ header {
     color: var(--principal);
     padding: 10px 20px;
     list-style-type: none;
-    font-size: 3em;
+    font-size: 5em;
     text-align: justify;
 }
 
@@ -412,7 +439,7 @@ header {
     color: var(--principal);
     padding: 10px 20px;
     list-style-type: none;
-    font-size: 2em;
+    font-size: 4em;
     text-align: justify;
 }
 
@@ -420,7 +447,7 @@ header {
     color: var(--principal);
     padding: 10px 20px;
     list-style-type: none;
-    font-size: 2em;
+    font-size: 3em;
     display: flex;
     justify-content: center;
 }
@@ -431,7 +458,7 @@ header {
     display: flex;
     justify-content: center;
     justify-items: center;
-    font-size: 3em;
+    font-size: 5em;
 }
 
 
@@ -488,6 +515,8 @@ header {
     justify-content: center;
     text-decoration: none;
     margin: 0px 10px;
+    font-size: 1.6em;
+    font-weight: bold;
 }
 
 .imagen__pmp {
@@ -793,12 +822,13 @@ header {
 
 .footer {
     background-color: black;
-    min-height: 10vh;
-}
+    /* min-height: 10vh; */
+}  
 
 .social__media {
     width: 50px;
-    padding: 00px;
+    margin: -5px;
+    padding: 0px;
     opacity: 10;
 }
 
@@ -811,12 +841,13 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
+     height: 60px;
 }
 
 .follow {
     font-family: var(--font-primary);
     color: var(--secondary);
-    font-size: 2.2em;
+    font-size: 3em;
     display: flex;
     justify-content: flex-start;
     margin: 0 20px;
@@ -825,7 +856,7 @@ header {
 .contact {
     font-family: var(--font-primary);
     color: var(--secondary);
-    font-size: 2.2em;
+    font-size: 3em;
     display: flex;
     justify-content: center;
 }
@@ -834,14 +865,14 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 400px);
-    padding: 130px 0px 0px 0px;
+    /* padding: 130px 0px 0px 0px; */
     background-color: #f2f3f2;
 }
 
 .offices {
     font-family: var(--font-primary);
     color: var(--secondary);
-    font-size: 2.2em;
+    font-size: 3em;
     display: flex;
     justify-content: flex-end;
     margin: 0 20px;
@@ -849,7 +880,7 @@ header {
 
 .offices__parrafo {
     font-family: var(--font-primary);
-    font-size: 1.5em;
+    font-size: 2em;
     display: flex;
     justify-content: flex-end;
     margin: 0 10px;
@@ -871,7 +902,7 @@ a {
 .red__social li {
     display: inline-block;
     padding: 10px;
-    margin: 10px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 .icon {
@@ -882,18 +913,40 @@ a {
     display: flex;
     justify-content: center;
     font-family: var(--font-primary);
-    font-size: 1.7em;
+    font-size: 2.5em;
+    height: 20px;
 }
 
 .box {
     padding: 2px;
     margin: 10px 100px;
     display: flex;
+    font-size: 2em;
+    width: 500px;
 }
 
 textarea {
     width: 525px;
 }
+
+/* Bootstrap */
+
+.nav-link {
+    font-family: var(--font-primary);
+    font-size: 1.2em;
+    font-weight: 1000;
+}
+
+.dropdown-item {
+    font-size: 2em;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
 
 /* Responsive */
 
