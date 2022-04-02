@@ -76,7 +76,10 @@ header {
 }
 
 header .navbar {
+<<<<<<< HEAD
     /* min-height: 10vh;     */
+=======
+>>>>>>> Segunda-Entrega-Proyecto
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
@@ -133,6 +136,7 @@ header .menu__item:hover {
 
 /* Contenido */
 
+<<<<<<< HEAD
 .content {
     color: var(--secondary);
     padding: 0px 20px;
@@ -155,6 +159,9 @@ ol, ul {
 }
 
 h1 {
+=======
+ h1 {
+>>>>>>> Segunda-Entrega-Proyecto
     font-family: var(--font-primary);
     font-size: 4em;
     margin: 0 0;
@@ -179,33 +186,6 @@ h1 {
 .banner__link {
     width: 100%;
     margin: 0px 0px 0px;
-}
-
-.principal {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-    padding: 10px;
-}
-
-.principal>div {
-    background-color: #39A2AE;
-    text-align: justify;
-    padding: 5px 0;
-    font-size: 1.8em;
-}
-
-.principal1 {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-}
-
-.principal1>div {
-    background-color: #6d6d6a;
-    text-align: justify;
-    padding: 5px 0;
-    font-size: 1.8em;
 }
 
 .button {
@@ -258,7 +238,33 @@ h1 {
     color: #000000;
     font-family: var(--font-secondary);
     font-size: 2em;
+    
+}
 
+.principal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.principal>div {
+    background-color: #39A2AE;
+    text-align: justify;
+    padding: 5px 0;
+}
+
+.principal1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.principal1>div {
+    background-color: #6d6d6a;
+    text-align: justify;
+    padding: 5px 0;
 }
 
 .principal2 {
@@ -279,37 +285,49 @@ h1 {
 .principal3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    padding: 0px;
-    height: 100%;
 }
 
 .principal3>div {
     background-color: #6d6d6a;
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     height: 10vh;
+=======
+    justify-content: center;
+    text-align: justify;
+>>>>>>> Segunda-Entrega-Proyecto
 }
 
 .principal4 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    height: 30%;
+    display: flex;
 }
 
 .principal5 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    height: 30%;
+    grid-template-areas:    "mp1 mp2"
+                            "mp3 mp4";
+                        }
+
+.maps {
+    grid-column-start: mp2;
+    grid-column-end: mp4;
+    grid-row-start: mp2;
+    grid-row-end: mp4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.maps {
+    width: 100%;
+    height: 100%;
+}
 
 .principal5>div {
     background-color: #6d6d6a;
-    display: flex;
-    align-items: center;
     padding: 5px 0;
     font-size: 1.8em;
 }
@@ -401,11 +419,18 @@ h1 {
     margin: 0px 225px 30px;
 }
 
+.content {
+    color: var(--secondary);
+    padding: 10px 20px;
+    list-style-type: none;
+    font-size: 2.5em;
+    text-align: justify;
+}
 .content1 {
     color: var(--secondary);
     display: flex;
     align-content: center;
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 0 20px;
 }
 
@@ -461,25 +486,36 @@ h1 {
     font-size: 5em;
 }
 
+.titulo {
+    color: var(--secondary);
+    padding: 0px 20px;
+    font-size: 2.5em;
+    text-align: justify;
+}
+
 
 .logo3__link {
-    height: 40%;
-    margin: 0% 20px;
+    height: 40px;
+    margin: 0px 40px;
 }
 
 .logo4__link {
     height: 50%;
-    margin: 0% 20px;
+    margin: 20px 20px;
 }
 
 .maps__about {
-    grid-row-start: -3;
-    grid-row-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 3;
     grid-column-start: 3;
     grid-column-end: 2;
-    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+}
+
+.maps__about .maps {
+height: 210px;
+width: 650px;
 }
 
 .banner__peque {
@@ -499,7 +535,7 @@ h1 {
 
 .imagen__about {
     width: 100%;
-    height: 500px;
+    height: 100%;
 }
 
 .banner__courses__link {
@@ -822,8 +858,12 @@ h1 {
 
 .footer {
     background-color: black;
+<<<<<<< HEAD
     /* min-height: 10vh; */
 }  
+=======
+ }
+>>>>>>> Segunda-Entrega-Proyecto
 
 .social__media {
     width: 50px;
@@ -865,7 +905,10 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 400px);
+<<<<<<< HEAD
     /* padding: 130px 0px 0px 0px; */
+=======
+>>>>>>> Segunda-Entrega-Proyecto
     background-color: #f2f3f2;
 }
 
@@ -952,79 +995,140 @@ textarea {
 
 @media screen and (max-width: 768px) {
     header {
-        padding: 1em;
         max-height: 40vh;
     }
 
     header .navbar {
         justify-content: center;
         flex-direction: column;
+        min-height: 100px;
     }
 
     h1 {
         flex-wrap: wrap;
         justify-content: center;
-        font-size: 2em;
-    }
-
-    .logo {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .banner__link {
-        width: 100%;
-        flex-grow: 1;
-        margin: 120px 0px 0px;
-    }
-
-    .menu {
-        font-size: 1em;
-    }
-
-    .principal {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    .principal1 {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-
-    .principal2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-gap: 10px;
-    }
-
-    .principal3 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-
-    .principal4 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
+        font-size: 3.5em;
     }
 
     .principal5 {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:    "m1"
+                                "m2"
+                                "m3";
     }
+    
+    .offices__parrafo {
+        font-size: 1.1em;
+    }
+
+    .maps {
+        grid-column-start: m1;
+        grid-column-end: m1;
+        grid-row-start: m3;
+        grid-row-end: m3;  
+        width: 100%;
+        height: 100%;  
+    }
+
+    .logo {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    .banner__link {
+        margin: 100px 0px 0px;
+    }
+
+    .menu {
+        font-size: 1.5em;
+    }
+
+    .principal {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        padding: 0px;
+        gap: 0px;
+    }
+
+    .principal1 {
+        grid-template-columns: 1fr;
+        grid-gap: 0px; 
+    }
+
+    .content {
+        font-size: 2.5em;
+    }
+
+    .list {
+        text-align: left;
+    }
+    .content1 {
+        font-size: 1.5em;
+        padding: 0px 10px;
+    }
+
+    .button__click {
+        margin: 5px 0 auto;
+        font-size: 3em;
+        width: 250px;
+        height: 40px;
+    }
+
+    .banner2__link {
+        height: 180px;
+    }
+
+    .principal3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:  "p1"
+                              "p2"
+                              "p3"
+                              "p4"
+                              "log"
+                              "p5";
+        height: 400px;
+    }
+
+    .principal3 .log {
+        grid-row-start: log;
+        grid-row-end: log;
+    }
+
+    .principal3 .teach {
+        grid-row-start: p3;
+        grid-row-end: p3;
+        
+    }
+
+    .principal3 .infra1{
+        grid-row-start: p2;
+        grid-row-end: p2;
+        
+    }
+
+    .principal3 .somos{
+        grid-row-start: p4;
+        grid-row-end: p4;
+        
+    }
+    
+    .logo4__link {
+        width: 350px;
+        height: 100px;
+        margin: 20px 20px;
+    }
+
 
     .principal5>div {
         background-color: #6d6d6a;
-        display: flex;
-        align-items: center;
         padding: 5px 0;
         font-size: 1.8em;
+
     }
 
     .principal6 {
@@ -1039,12 +1143,6 @@ textarea {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         width: 100%;
-    }
-
-    .maps__about {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
     }
 
     .red__social li {
@@ -1064,24 +1162,14 @@ textarea {
         font-size: 2em;
     }
 
-    .offices__parrafo {
-        font-size: 0.8em;
-        margin: 0px 0px 0px 40px;
-        text-align: justify;
-        display: flex;
-        justify-content: flex-end;
-        width: 80px;
-
-    }
-
     .social__media {
-        width: 30px;
-        padding: 0;
-        opacity: 10;
+        width: 35px;
+        margin: 8px;
     }
 
     .icon {
-        width: 25px;
+        width: 20px;
+        margin: 0px 3px;
 
     }
 
@@ -1093,7 +1181,8 @@ textarea {
         display: flex;
         justify-content: center;
         font-family: var(--font-primary);
-        font-size: 0.9em;
+        font-size: 1.7em;
     }
+
 
 }
