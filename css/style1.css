@@ -19,8 +19,8 @@
     --secondary: #ffffff;
     --font-primary: "Smooch Sans", sans-serif;
     --font-secondary: "Bowlby One SC", cursive;
-    --text-lg: 3em;
-    --tex-md: 3em;
+    --text-lg: 2em;
+    --tex-md: 2em;
 }
 
 
@@ -29,12 +29,6 @@ html {
     font-size: 62.5%;
     font-family: var(--font-primary);
     color: var(--secondary);
-}
-
-body {
-    color: var(--secondary);
-    font-family: var(--font-primary);
-    font-size: 62.5%;
     background-color: #f2f3f2;
 }
 
@@ -45,10 +39,6 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
-}
-
-a:hover {
-    color: var(--secondary);
 }
 
 /* Helpers */
@@ -63,27 +53,20 @@ a:hover {
 }
 
 .container {
-    max-width: 100%;
+    max-width: auto;
     margin: 0 auto;
 }
 
 /* Header */
 
 header {
-    position: sticky;
-    top: 0;
     background-color: var(--principal);
 }
 
 header .navbar {
-<<<<<<< HEAD
-    /* min-height: 10vh;     */
-=======
->>>>>>> Segunda-Entrega-Proyecto
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    font-size: 3em;
 }
 
 header .logo {
@@ -96,7 +79,7 @@ header .menu {
 }
 
 header .menu__item {
-    border: 2px solid transparent;
+    /* border: 2px solid var(--principal); */
     transition: border-color .5s ease-in-out;
 }
 
@@ -124,7 +107,7 @@ header .menu__item:hover {
 
 .sub-menu__link {
     padding: 1rem;
-    font-size: 2.8em;
+    font-size: 1.8em;
     transition: all ease-in-out;
 }
 
@@ -136,34 +119,9 @@ header .menu__item:hover {
 
 /* Contenido */
 
-<<<<<<< HEAD
-.content {
-    color: var(--secondary);
-    padding: 0px 20px;
-    list-style-type: none;
-    font-size: 2em;
-    text-align: justify;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 1000;
-}
-
-ol, ul {
-    padding-left: 0rem;
-}
-
-h1 {
-=======
  h1 {
->>>>>>> Segunda-Entrega-Proyecto
     font-family: var(--font-primary);
-    font-size: 4em;
+    font-size: 3em;
     margin: 0 0;
     padding: 0 0;
     background-color: rgba(0, 198, 248, 0.459);
@@ -172,7 +130,6 @@ h1 {
     justify-content: center;
 
 }
-
 
 .logo {
     height: 50px;
@@ -207,20 +164,20 @@ h1 {
 
 .button__click1 {
     border-radius: 5px;
-    height: 30px;
+    height: 35px;
     width: 130px;
-    margin: -15px 300px 0px;
+    margin: 5px 300px 0px;
     background-color: #3483fa;
     color: aliceblue;
     border-color: transparent;
     font-family: var(--font-primary);
-    font-size: 3em;
+    font-size: 2em;
 }
 
-/* header {
+header {
     position: fixed;
     width: 100%;
-} */
+}
 
 .banner2__link {
     width: 100%;
@@ -291,12 +248,8 @@ h1 {
     background-color: #6d6d6a;
     display: flex;
     align-items: center;
-<<<<<<< HEAD
-    height: 10vh;
-=======
     justify-content: center;
     text-align: justify;
->>>>>>> Segunda-Entrega-Proyecto
 }
 
 .principal4 {
@@ -438,7 +391,7 @@ h1 {
     color: var(--secondary);
     display: flex;
     align-content: center;
-    font-size: 5em;
+    font-size: 3em;
     padding: 0 20px;
     background-color: #000000;
 }
@@ -456,7 +409,7 @@ h1 {
     color: var(--principal);
     padding: 10px 20px;
     list-style-type: none;
-    font-size: 5em;
+    font-size: 3em;
     text-align: justify;
 }
 
@@ -464,7 +417,7 @@ h1 {
     color: var(--principal);
     padding: 10px 20px;
     list-style-type: none;
-    font-size: 4em;
+    font-size: 2em;
     text-align: justify;
 }
 
@@ -472,7 +425,7 @@ h1 {
     color: var(--principal);
     padding: 10px 20px;
     list-style-type: none;
-    font-size: 3em;
+    font-size: 2em;
     display: flex;
     justify-content: center;
 }
@@ -483,7 +436,7 @@ h1 {
     display: flex;
     justify-content: center;
     justify-items: center;
-    font-size: 5em;
+    font-size: 3em;
 }
 
 .titulo {
@@ -551,8 +504,6 @@ width: 650px;
     justify-content: center;
     text-decoration: none;
     margin: 0px 10px;
-    font-size: 1.6em;
-    font-weight: bold;
 }
 
 .imagen__pmp {
@@ -858,17 +809,11 @@ width: 650px;
 
 .footer {
     background-color: black;
-<<<<<<< HEAD
-    /* min-height: 10vh; */
-}  
-=======
  }
->>>>>>> Segunda-Entrega-Proyecto
 
 .social__media {
     width: 50px;
-    margin: -5px;
-    padding: 0px;
+    padding: 00px;
     opacity: 10;
 }
 
@@ -881,13 +826,12 @@ width: 650px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
-     height: 60px;
 }
 
 .follow {
     font-family: var(--font-primary);
     color: var(--secondary);
-    font-size: 3em;
+    font-size: 2.2em;
     display: flex;
     justify-content: flex-start;
     margin: 0 20px;
@@ -896,7 +840,7 @@ width: 650px;
 .contact {
     font-family: var(--font-primary);
     color: var(--secondary);
-    font-size: 3em;
+    font-size: 2.2em;
     display: flex;
     justify-content: center;
 }
@@ -905,17 +849,13 @@ width: 650px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 400px);
-<<<<<<< HEAD
-    /* padding: 130px 0px 0px 0px; */
-=======
->>>>>>> Segunda-Entrega-Proyecto
     background-color: #f2f3f2;
 }
 
 .offices {
     font-family: var(--font-primary);
     color: var(--secondary);
-    font-size: 3em;
+    font-size: 2.2em;
     display: flex;
     justify-content: flex-end;
     margin: 0 20px;
@@ -923,7 +863,7 @@ width: 650px;
 
 .offices__parrafo {
     font-family: var(--font-primary);
-    font-size: 2em;
+    font-size: 1.5em;
     display: flex;
     justify-content: flex-end;
     margin: 0 10px;
@@ -945,7 +885,7 @@ a {
 .red__social li {
     display: inline-block;
     padding: 10px;
-    margin: 0px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
 }
 
 .icon {
@@ -956,40 +896,18 @@ a {
     display: flex;
     justify-content: center;
     font-family: var(--font-primary);
-    font-size: 2.5em;
-    height: 20px;
+    font-size: 1.7em;
 }
 
 .box {
     padding: 2px;
     margin: 10px 100px;
     display: flex;
-    font-size: 2em;
-    width: 500px;
 }
 
 textarea {
     width: 525px;
 }
-
-/* Bootstrap */
-
-.nav-link {
-    font-family: var(--font-primary);
-    font-size: 1.2em;
-    font-weight: 1000;
-}
-
-.dropdown-item {
-    font-size: 2em;
-}
-
-.navbar-brand {
-    font-size: 2em;
-    padding: 0px 0px;
-    margin: 0px 0px;
-}
-
 
 /* Responsive */
 
