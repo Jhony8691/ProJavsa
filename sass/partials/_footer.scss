@@ -1,0 +1,100 @@
+footer {
+    background-color: black;
+ }
+
+.social__media {
+    width: 50px;
+    padding: 00px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.text__footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.follow {
+    font-family: $font-primary;
+    color: $secondary;
+    font-size: 2.2em;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 20px;
+}
+
+.contact {
+    font-family: $font-primary;
+    color: $secondary;
+    font-size: 2.2em;
+    display: flex;
+    justify-content: center;
+}
+
+.contact1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 400px);
+    background-color: #f2f3f2;
+}
+
+.offices {
+    font-family: $font-primary;
+    color: $secondary;
+    font-size: 2.2em;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 20px;
+}
+
+.offices__parrafo {
+    font-family: $font-primary;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 10px;
+}
+
+
+.derechos {
+    color: rgb(41, 112, 175);
+    font-weight: bold;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.red__social li {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+}
+
+.icon {
+    width: 25px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    font-family: $font-primary;
+    font-size: 1.7em;
+}
+
+.box {
+    padding: 2px;
+    margin: 10px 100px;
+    display: flex;
+}
+
+textarea {
+    width: 525px;
+}
