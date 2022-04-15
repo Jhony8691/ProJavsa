@@ -75,7 +75,7 @@ header {
     color: #000000;
     font-family: $font-primary;
     font-size: 2em;
-    
+
 }
 
 .principal {
@@ -140,9 +140,9 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:    "mp1 mp2"
-                            "mp3 mp4";
-                        }
+    grid-template-areas: "mp1 mp2"
+        "mp3 mp4";
+}
 
 .maps {
     grid-column-start: mp2;
@@ -254,6 +254,7 @@ header {
     padding: 10px 20px;
     list-style-type: none;
 }
+
 .content1 {
     color: $secondary;
     display: flex;
@@ -331,8 +332,8 @@ header {
 }
 
 .maps__about .maps {
-height: 210px;
-width: 650px;
+    height: 210px;
+    width: 650px;
 }
 
 .banner__peque {
@@ -409,9 +410,9 @@ width: 650px;
 
 /* Responsive */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 320px) {
     header {
-        max-height: 40vh;
+        max-height: 20vh;
     }
 
     header .navbar {
@@ -426,24 +427,35 @@ width: 650px;
         font-size: 2.5em;
     }
 
-
-    
-
     .principal5 {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
-        grid-template-areas:    "m1"
-                                "m2"
-                                "m3";
+        grid-template-areas: "m1"
+            "m2"
+            "m3";
     }
-    
+
+    .parrafo__pagos {
+        font-family: $font-primary;
+        font-size: 2em;
+        margin: 0px 125px 30px;
+    }
+
+    .icon__pagos {
+        margin: 0px 100px 0px; 
+    }
+
+    .button__click1 {
+        margin: 5px 170px 0px;
+    }
+
     .contact1 {
         display: grid;
         grid-template-columns: repeat(1, 600px);
         grid-template-rows: repeat(2, 1fr);
     }
-    
+
 
     .offices__parrafo {
         font-size: 1.3em;
@@ -453,9 +465,9 @@ width: 650px;
         grid-column-start: m1;
         grid-column-end: m1;
         grid-row-start: m3;
-        grid-row-end: m3;  
+        grid-row-end: m3;
         width: 100%;
-        height: 100%;  
+        height: 100%;
     }
 
     .logo {
@@ -471,9 +483,18 @@ width: 650px;
         list-style-type: none;
         display: flex;
         justify-content: center;
+        width: 400px;
+        margin: 0px 10px;
     }
 
-    header .menu__item .menu__link, header .menu__item--active .menu__link {
+    .content7 {
+        width: 400px;
+        font-size: 2.5em;
+        margin: 0px 10px;
+    }
+
+    header .menu__item .menu__link,
+    header .menu__item--active .menu__link {
         font-size: 2em;
     }
 
@@ -486,7 +507,7 @@ width: 650px;
 
     .principal1 {
         grid-template-columns: 1fr;
-        grid-gap: 0px; 
+        grid-gap: 0px;
     }
 
     .content {
@@ -496,6 +517,7 @@ width: 650px;
     .list {
         text-align: left;
     }
+
     .content1 {
         padding: 0px 10px;
     }
@@ -515,12 +537,12 @@ width: 650px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
-        grid-template-areas:  "p1"
-                              "p2"
-                              "p3"
-                              "p4"
-                              "log"
-                              "p5";
+        grid-template-areas: "p1"
+            "p2"
+            "p3"
+            "p4"
+            "log"
+            "p5";
         height: 400px;
     }
 
@@ -532,40 +554,40 @@ width: 650px;
     .principal3 .teach {
         grid-row-start: p3;
         grid-row-end: p3;
-        
+
     }
 
-    .principal3 .infra1{
+    .principal3 .infra1 {
         grid-row-start: p2;
         grid-row-end: p2;
-        
+
     }
 
-    .principal3 .somos{
+    .principal3 .somos {
         grid-row-start: p4;
         grid-row-end: p4;
-        
+
     }
 
     .principal6 {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(1, 350px);
-        grid-template-areas:    "c1"
-                                "c2"
-                                "c3"
-                                "c4"
-                                "c5"
-                                "c6"
-                                "c7"
-                                "c8"
-                                "c9"
-                                "c10"
-                                "c11"
-                                "c12"
-                                "c13"
-                                "c14"
-                                "c15";
+        grid-template-areas: "c1"
+            "c2"
+            "c3"
+            "c4"
+            "c5"
+            "c6"
+            "c7"
+            "c8"
+            "c9"
+            "c10"
+            "c11"
+            "c12"
+            "c13"
+            "c14"
+            "c15";
         gap: 0px;
         width: 100%;
     }
@@ -599,7 +621,7 @@ width: 650px;
         width: 100%;
         height: 100%;
     }
-    
+
     .logo4__link {
         width: 250px;
         height: 80px;
@@ -614,13 +636,13 @@ width: 650px;
 
     }
 
-    .principal6 >div {
+    .principal6>div {
         font-size: 1.8em;
         color: #000000;
     }
 
-    
-    .pmp div{
+
+    .pmp div {
         height: 2vh;
     }
 
@@ -665,7 +687,7 @@ width: 650px;
 
     .box {
         padding: 2px;
-        margin: 10px 50px;
+        margin: 10px;
         display: flex;
     }
 

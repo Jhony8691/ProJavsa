@@ -694,9 +694,9 @@ header {
   height: 700px; }
 
 /* Responsive */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 320px) {
   header {
-    max-height: 40vh; }
+    max-height: 20vh; }
   header .navbar {
     justify-content: center;
     flex-direction: column;
@@ -710,6 +710,14 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "m1" "m2" "m3"; }
+  .parrafo__pagos {
+    font-family: "Smooch Sans", sans-serif;
+    font-size: 2em;
+    margin: 0px 125px 30px; }
+  .icon__pagos {
+    margin: 0px 100px 0px; }
+  .button__click1 {
+    margin: 5px 170px 0px; }
   .contact1 {
     display: grid;
     grid-template-columns: repeat(1, 600px);
@@ -733,8 +741,15 @@ header {
     padding: 10px 20px;
     list-style-type: none;
     display: flex;
-    justify-content: center; }
-  header .menu__item .menu__link, header .menu__item--active .menu__link, header .menu__item--active .menu__link {
+    justify-content: center;
+    width: 400px;
+    margin: 0px 10px; }
+  .content7 {
+    width: 400px;
+    font-size: 2.5em;
+    margin: 0px 10px; }
+  header .menu__item .menu__link, header .menu__item--active .menu__link,
+  header .menu__item--active .menu__link {
     font-size: 2em; }
   .principal {
     grid-template-columns: 1fr;
@@ -837,7 +852,7 @@ header {
     margin: 0px 0px 50px; }
   .box {
     padding: 2px;
-    margin: 10px 50px;
+    margin: 10px;
     display: flex; }
   textarea {
     width: 450px; }
