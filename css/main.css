@@ -704,7 +704,7 @@ header {
   h1 {
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 3.5em; }
+    font-size: 2.5em; }
   .principal5 {
     display: grid;
     grid-template-columns: 1fr;
@@ -734,9 +734,8 @@ header {
     list-style-type: none;
     display: flex;
     justify-content: center; }
-  .menu__link {
-    font-size: 1.5em;
-    padding: 1rem; }
+  header .menu__item .menu__link, header .menu__item--active .menu__link, header .menu__item--active .menu__link {
+    font-size: 2em; }
   .principal {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);

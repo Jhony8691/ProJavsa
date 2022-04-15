@@ -423,8 +423,11 @@ width: 650px;
     h1 {
         flex-wrap: wrap;
         justify-content: center;
-        font-size: 3.5em;
+        font-size: 2.5em;
     }
+
+
+    
 
     .principal5 {
         display: grid;
@@ -470,13 +473,8 @@ width: 650px;
         justify-content: center;
     }
 
-    // .menu {
-    //     font-size: 1.5em;
-    // }
-
-    .menu__link {
-        font-size: 1.5em;
-        padding: 1rem;
+    header .menu__item .menu__link, header .menu__item--active .menu__link {
+        font-size: 2em;
     }
 
     .principal {
