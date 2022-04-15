@@ -1,50 +1,46 @@
 $principal: #000000;
 $secondary: #ffffff;
-$font-primary: "Smooch Sans", sans-serif;
-$font-secondary: "Bowlby One SC", cursive;
+$font-primary: "Smooch Sans",
+sans-serif;
+$font-secondary: "Bowlby One SC",
+cursive;
 $text-lg: 2em;
 $tex-md: 2.5em;
 
 // Maps Imagenes en pagina Courses
 
-$images: ( 
-    pmp: 'imagen__pmp',
+$images: (pmp: 'imagen__pmp',
     acp: 'imagen_acp',
     advanced: 'imagen__avanced',
     itil: 'imagen__itil',
-    scrum: 'imagen__scrum', 
+    scrum: 'imagen__scrum',
 );
 
-@each $image, $value in $images {
+@each $image,
+$value in $images {
     .imagen__#{$image} {
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        height: 100%;
-    }    
+        height: 90%;
+    }
 }
 
 
-$fuentes: ( 
-    xlarge: 3em,
+$fuentes: (xlarge: 3em,
     large: 2.5em,
     medium: 2em,
     small: 1.5em,
-    
+
 );
 
-@each $f, $val in $fuentes {
+@each $f,
+$val in $fuentes {
     .font__#{$f} {
         font-size: #{$val};
         color: $secondary;
         text-align: justify;
-    }    
+    }
 }
 
-p{
-    font-size: map-get($fuentes , large);
+p {
+    font-size: map-get($fuentes, large);
 }
-
-

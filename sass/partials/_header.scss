@@ -20,9 +20,9 @@ header {
 
         &__item {
             transition: border-color .5s ease-in-out;
-            
+
             &--active {
-                @extend .menu__item; 
+                @extend .menu__item;
                 border-bottom: 2px solid #ffffff;
             }
 
@@ -64,4 +64,3 @@ header {
         }
     }
 }
-

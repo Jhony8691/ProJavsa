@@ -8,43 +8,23 @@
 
 .imagen__pmp {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  height: 100%; }
+  height: 90%; }
 
 .imagen__acp {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  height: 100%; }
+  height: 90%; }
 
 .imagen__advanced {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  height: 100%; }
+  height: 90%; }
 
 .imagen__itil {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  height: 100%; }
+  height: 90%; }
 
 .imagen__scrum {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  height: 100%; }
+  height: 90%; }
 
 .font__xlarge {
   font-size: 3em;
@@ -110,38 +90,31 @@ p {
   overflow: hidden; }
 
 .imagen__pmp:hover {
-  width: 105%;
-  height: 105%;
+  height: 100%;
   transition: width 1s ease-in-out; }
 
 .imagen__acp:hover {
-  width: 105%;
-  height: 105%;
+  height: 100%;
   transition: width 1s ease-in-out; }
 
 .imagen__advanced:hover {
-  width: 105%;
-  height: 105%;
+  height: 100%;
   transition: width 1s ease-in-out; }
 
 .imagen__train:hover {
-  width: 105%;
-  height: 105%;
+  height: 100%;
   transition: width 1s ease-in-out; }
 
 .imagen__itil:hover {
-  width: 105%;
-  height: 105%;
+  height: 100%;
   transition: width 1s ease-in-out; }
 
 .imagen__scrum:hover {
-  width: 105%;
-  height: 105%;
+  height: 100%;
   transition: width 1s ease-in-out; }
 
 .imagen__producto:hover {
-  width: 105%;
-  height: 105%;
+  height: 100%;
   transition: width 1s ease-in-out; }
 
 .logo:hover {
@@ -426,7 +399,8 @@ h1 {
   font-size: 2em; }
 
 header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%; }
 
 .banner2__link {
@@ -520,9 +494,7 @@ header {
 .principal6 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 350px);
-  gap: 10px;
-  min-height: 0vh; }
+  grid-template-rows: repeat(6, auto); }
 
 .principal7 {
   display: grid;
@@ -642,8 +614,7 @@ header {
 .titulo {
   color: #ffffff;
   padding: 0px 20px;
-  font-size: 2.5em;
-  text-align: justify; }
+  font-size: 2.5em; }
 
 .logo3__link {
   height: 40px;
@@ -691,22 +662,24 @@ header {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  margin: 0px 10px; }
+  margin: 0px 10px;
+  font-size: 2.5em;
+  color: #000000; }
 
 .design {
   font-size: 1.2em; }
 
+.center {
+  display: flex;
+  justify-content: center; }
+
 .imagen__train {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  height: 100%; }
+  height: 90%; }
 
 .imagen__producto {
   width: 100%;
-  height: 100%; }
+  height: 90%; }
 
 .imagen__fin {
   width: 200%;
@@ -737,8 +710,12 @@ header {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "m1" "m2" "m3"; }
+  .contact1 {
+    display: grid;
+    grid-template-columns: repeat(1, 600px);
+    grid-template-rows: repeat(2, 1fr); }
   .offices__parrafo {
-    font-size: 1.1em; }
+    font-size: 1.3em; }
   .maps {
     grid-column-start: m1;
     grid-column-end: m1;
@@ -750,8 +727,11 @@ header {
     flex-grow: 1;
     display: flex;
     align-items: center; }
-  .banner__link {
-    margin: 100px 0px 0px; }
+  .content6 {
+    padding: 10px 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center; }
   .menu {
     font-size: 1.5em; }
   .principal {
@@ -770,8 +750,8 @@ header {
     padding: 0px 10px; }
   .button__click {
     margin: 5px 0 auto;
-    font-size: 3em;
-    width: 250px;
+    font-size: 2.5em;
+    width: 200px;
     height: 40px; }
   .banner2__link {
     height: 180px; }
@@ -793,19 +773,44 @@ header {
   .principal3 .somos {
     grid-row-start: p4;
     grid-row-end: p4; }
+  .principal6 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 350px);
+    grid-template-areas: "c1" "c2" "c3" "c4" "c5" "c6" "c7" "c8" "c9" "c10" "c11" "c12" "c13" "c14" "c15";
+    gap: 0px;
+    width: 100%; }
+  .pmp {
+    grid-row-start: c2;
+    grid-row-end: c2; }
+  .acp {
+    grid-row-start: c4;
+    grid-row-end: c4; }
+  .train {
+    grid-row-start: c8;
+    grid-row-end: c8; }
+  .itil {
+    grid-row-start: c10;
+    grid-row-end: c10; }
+  .product {
+    grid-row-start: c14;
+    grid-row-end: c14; }
+  .imagen__fin {
+    width: 100%;
+    height: 100%; }
   .logo4__link {
-    width: 350px;
-    height: 100px;
+    width: 250px;
+    height: 80px;
     margin: 20px 20px; }
   .principal5 > div {
     background-color: #6d6d6a;
     padding: 5px 0;
     font-size: 1.8em; }
-  .principal6 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    width: 100%; }
+  .principal6 > div {
+    font-size: 1.8em;
+    color: #000000; }
+  .pmp div {
+    height: 2vh; }
   .principal7 {
     display: grid;
     grid-template-columns: 1fr;
@@ -827,9 +832,19 @@ header {
     width: 20px;
     margin: 0px 3px; }
   form {
-    margin: 100px 0px 50px; }
+    margin: 0px 0px 50px; }
+  .box {
+    padding: 2px;
+    margin: 10px 50px;
+    display: flex; }
+  textarea {
+    width: 450px; }
+  .text__contact {
+    margin-top: 30px; }
   .copyright {
     display: flex;
     justify-content: center;
     font-family: "Smooch Sans", sans-serif;
-    font-size: 1.7em; } }
+    font-size: 1.7em; }
+  .text__courses {
+    font-size: 1.5em; } }
