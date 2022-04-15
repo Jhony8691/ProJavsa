@@ -459,6 +459,8 @@ width: 650px;
         flex-grow: 1;
         display: flex;
         align-items: center;
+        height: 40px;
+        margin-top: 10px;
     }
 
     .content6 {
@@ -468,8 +470,13 @@ width: 650px;
         justify-content: center;
     }
 
-    .menu {
+    // .menu {
+    //     font-size: 1.5em;
+    // }
+
+    .menu__link {
         font-size: 1.5em;
+        padding: 1rem;
     }
 
     .principal {

@@ -726,14 +726,17 @@ header {
   .logo {
     flex-grow: 1;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    height: 40px;
+    margin-top: 10px; }
   .content6 {
     padding: 10px 20px;
     list-style-type: none;
     display: flex;
     justify-content: center; }
-  .menu {
-    font-size: 1.5em; }
+  .menu__link {
+    font-size: 1.5em;
+    padding: 1rem; }
   .principal {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
