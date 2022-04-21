@@ -8,9 +8,9 @@
     background-image: linear-gradient(#6d6d6a, black);
 }
 
-.principal5>div {
-    background-image: linear-gradient(#6d6d6a, black);
-}
+// .principal5>div {
+//     background-image: linear-gradient(#6d6d6a, black);
+// }
 
 .contact1 {
     background-image: linear-gradient(#6d6d6a, black);
@@ -32,9 +32,9 @@
     color: $secondary;
 }
 
-.navbar {
-    background-image: radial-gradient(circle, #dcdeec, #aebacc, #7f99ab, #4f7988, #1c5a62);
-}
+// .navbar {
+//     background-image: radial-gradient(circle, #dcdeec, #aebacc, #7f99ab, #4f7988, #1c5a62);
+// }
 
 
 .logo2__link {
@@ -88,10 +88,10 @@
     transition: width 1s ease-in-out;
 }
 
-.logo:hover {
-    width: 45%;
-    transition: width 3 ease-in-out;
-}
+// .logo:hover {
+//     width: 45%;
+//     transition: width 3 ease-in-out;
+// }
 
 .icon {
     animation-name: crazyicon;
@@ -107,12 +107,12 @@
     animation-duration: 3s;
 }
 
-.menu__item {
-    animation-name: menuloco;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-    animation-duration: 3s;
-}
+// .menu__item {
+//     animation-name: menuloco;
+//     animation-iteration-count: 1;
+//     animation-timing-function: ease-in-out;
+//     animation-duration: 3s;
+// }
 
 
 @keyframes crazyicon {
@@ -149,39 +149,39 @@
 
 }
 
-@keyframes menuloco {
-    0% {
-        transform: rotate(-150deg);
-        position: relative;
-        right: 100px;
-    }
+// @keyframes menuloco {
+//     0% {
+//         transform: rotate(-150deg);
+//         position: relative;
+//         right: 100px;
+//     }
 
-    25% {
-        transform: rotate(-200deg);
-        position: relative;
-        right: 75px;
-    }
+//     25% {
+//         transform: rotate(-200deg);
+//         position: relative;
+//         right: 75px;
+//     }
 
-    50% {
-        transform: rotate(-250deg);
-        position: relative;
-        right: 50px;
-    }
+//     50% {
+//         transform: rotate(-250deg);
+//         position: relative;
+//         right: 50px;
+//     }
 
-    75% {
-        transform: rotate(-300deg);
-        position: relative;
-        right: 25px;
-    }
+//     75% {
+//         transform: rotate(-300deg);
+//         position: relative;
+//         right: 25px;
+//     }
 
-    100% {
-        transform: rotate(-360deg);
-        position: relative;
-        right: 0px;
-    }
+//     100% {
+//         transform: rotate(-360deg);
+//         position: relative;
+//         right: 0px;
+//     }
 
 
-}
+// }
 
 @keyframes crazyicon1 {
     0% {

@@ -3,7 +3,7 @@ h1 {
     font-size: 3em;
     margin: 0 0;
     padding: 0 0;
-    background-color: rgba(0, 198, 248, 0.459);
+    background-color: #000000;
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
@@ -347,7 +347,7 @@ header {
 }
 
 .banner__peque1__team {
-    width: 100%;
+    width: 133%;
     height: 100%;
 }
 
@@ -374,7 +374,7 @@ header {
 }
 
 .design {
-    font-size: 0.8em;
+    font-size: 1.2em;
 }
 
 .center {
@@ -397,34 +397,65 @@ header {
     height: 100%;
 }
 
-.imagen__blog {
+.blog__imagen {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-items: center;
-    height: 700px;
+    height: 500px;
 }
 
+.imagen__blog {
+    width: 1000px;
+    height: 500px;
+}
 
 
 /* Responsive */
 
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) {
     header {
-        max-height: 20vh;
+        height: auto;
+    }
+
+    .nav__label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu{
+        position: fixed;
+        top:100px;
+        bottom: 0;
+        background: #f08080;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 0.5s ease-in-out;
+    }
+
+    .nav__input:checked + .menu__item{
+        clip-path: circle(100% at center);
+    }
+
+    .design {
+        font-size: 0.8em
     }
 
     header .navbar {
         justify-content: center;
         flex-direction: column;
-        min-height: 100px;
     }
 
     h1 {
         flex-wrap: wrap;
         justify-content: center;
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .principal5 {
@@ -443,7 +474,7 @@ header {
     }
 
     .icon__pagos {
-        margin: 0px 100px 0px; 
+        margin: 0px 100px 0px;
     }
 
     .button__click1 {
@@ -458,7 +489,7 @@ header {
 
 
     .offices__parrafo {
-        font-size: 1.3em;
+        font-size: 0.8em;
     }
 
     .maps {
@@ -493,10 +524,11 @@ header {
         margin: 0px 10px;
     }
 
-    header .menu__item .menu__link,
-    header .menu__item--active .menu__link {
-        font-size: 2em;
-    }
+    // header .menu__item .menu__link,
+    // header .menu__item--active .menu__link {
+    //     font-size: 2em;
+    //     padding: 0px;
+    // }
 
     .principal {
         grid-template-columns: 1fr;
@@ -511,7 +543,7 @@ header {
     }
 
     .content {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .list {

@@ -1,5 +1,6 @@
 header {
     background-color: $principal;
+    height: 8vh;
 
     .navbar {
         @include flex (row, space-between, center, 2rem, wrap);
@@ -10,31 +11,32 @@ header {
         flex-basis: 30%;
     }
 
-    .menu {
-        flex-basis: 30%;
-        @include flex (row, space-between, center, 2rem, nowrap);
 
-        &__item {
-            transition: border-color .5s ease-in-out;
+}
 
-            &--active {
-                @extend .menu__item;
-                border-bottom: 2px solid #ffffff;
-            }
+.menu {
+    flex-basis: 30%;
+    @include flex (row, space-between, center, 2rem, nowrap);
 
-            &:hover {
-                border: 2px solid $secondary
-            }
+    &__item {
+        transition: border-color .5s ease-in-out;
 
-            &:hover .sub-menu {
-                display: block;
-            }
+        &--active {
+            @extend .menu__item;
+            border-bottom: 2px solid #ffffff;
+        }
 
-            .menu__link {
-                font-size: $tex-md;
-                padding: 1rem;
-            }
+        &:hover {
+            border: 2px solid $secondary
+        }
 
+        &:hover .sub-menu {
+            display: block;
+        }
+
+        .menu__link {
+            font-size: $tex-md;
+            padding: 1rem;
         }
 
     }
@@ -59,4 +61,14 @@ header {
             color: $principal;
         }
     }
+}
+
+
+
+// .nav__input:checked + .menu {
+//     background: tomato;
+// }
+
+.nav__label, .nav__input {
+    display: none;
 }

@@ -56,9 +56,6 @@ p {
 .principal2 > div {
   background-image: linear-gradient(#6d6d6a, black); }
 
-.principal5 > div {
-  background-image: linear-gradient(#6d6d6a, black); }
-
 .contact1 {
   background-image: linear-gradient(#6d6d6a, black); }
 
@@ -73,9 +70,6 @@ p {
 
 .parrafo__pagos {
   color: #ffffff; }
-
-.navbar {
-  background-image: radial-gradient(circle, #dcdeec, #aebacc, #7f99ab, #4f7988, #1c5a62); }
 
 .logo2__link {
   transform: translateY(-350px); }
@@ -117,10 +111,6 @@ p {
   height: 100%;
   transition: width 1s ease-in-out; }
 
-.logo:hover {
-  width: 45%;
-  transition: width 3 ease-in-out; }
-
 .icon {
   animation-name: crazyicon;
   animation-iteration-count: 1;
@@ -133,35 +123,7 @@ p {
   animation-timing-function: ease-in-out;
   animation-duration: 3s; }
 
-.menu__item, header .menu__item--active {
-  animation-name: menuloco;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-  animation-duration: 3s; }
-
 @keyframes crazyicon {
-  0% {
-    transform: rotate(-150deg);
-    position: relative;
-    right: 100px; }
-  25% {
-    transform: rotate(-200deg);
-    position: relative;
-    right: 75px; }
-  50% {
-    transform: rotate(-250deg);
-    position: relative;
-    right: 50px; }
-  75% {
-    transform: rotate(-300deg);
-    position: relative;
-    right: 25px; }
-  100% {
-    transform: rotate(-360deg);
-    position: relative;
-    right: 0px; } }
-
-@keyframes menuloco {
   0% {
     transform: rotate(-150deg);
     position: relative;
@@ -223,7 +185,8 @@ a {
   margin: 0 auto; }
 
 header {
-  background-color: #000000; }
+  background-color: #000000;
+  height: 8vh; }
   header .navbar {
     display: flex;
     flex-direction: row;
@@ -234,25 +197,26 @@ header {
     padding: 0 2rem; }
   header .logo {
     flex-basis: 30%; }
-  header .menu {
-    flex-basis: 30%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: nowrap; }
-    header .menu__item, header .menu__item--active {
-      transition: border-color .5s ease-in-out; }
-      header .menu__item--active {
-        border-bottom: 2px solid #ffffff; }
-      header .menu__item:hover, header .menu__item--active:hover {
-        border: 2px solid #ffffff; }
-      header .menu__item:hover .sub-menu, header .menu__item--active:hover .sub-menu {
-        display: block; }
-      header .menu__item .menu__link, header .menu__item--active .menu__link {
-        font-size: 2.5em;
-        padding: 1rem; }
+
+.menu {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: nowrap; }
+  .menu__item, .menu__item--active {
+    transition: border-color .5s ease-in-out; }
+    .menu__item--active {
+      border-bottom: 2px solid #ffffff; }
+    .menu__item:hover, .menu__item--active:hover {
+      border: 2px solid #ffffff; }
+    .menu__item:hover .sub-menu, .menu__item--active:hover .sub-menu {
+      display: block; }
+    .menu__item .menu__link, .menu__item--active .menu__link {
+      font-size: 2.5em;
+      padding: 1rem; }
 
 .sub-menu {
   display: none;
@@ -267,11 +231,14 @@ header {
       background-color: #ffffff;
       color: #000000; }
 
+.nav__label, .nav__input {
+  display: none; }
+
 footer {
   background-color: black; }
 
 .social__media {
-  width: 50px;
+  width: 54px;
   padding: 00px; }
 
 .social {
@@ -286,7 +253,7 @@ footer {
 .follow {
   font-family: "Smooch Sans", sans-serif;
   color: #ffffff;
-  font-size: 2.2em;
+  font-size: 3em;
   display: flex;
   justify-content: flex-start;
   margin: 0 20px; }
@@ -294,7 +261,7 @@ footer {
 .contact {
   font-family: "Smooch Sans", sans-serif;
   color: #ffffff;
-  font-size: 2.2em;
+  font-size: 3em;
   display: flex;
   justify-content: center; }
 
@@ -307,14 +274,14 @@ footer {
 .offices {
   font-family: "Smooch Sans", sans-serif;
   color: #ffffff;
-  font-size: 2.2em;
+  font-size: 3em;
   display: flex;
   justify-content: flex-end;
   margin: 0 20px; }
 
 .offices__parrafo {
   font-family: "Smooch Sans", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.8em;
   display: flex;
   justify-content: flex-end;
   margin: 0 10px; }
@@ -335,7 +302,7 @@ a {
   margin: 10px 0px 0px 0px; }
 
 .icon {
-  width: 25px; }
+  width: 32px; }
 
 .copyright {
   display: flex;
@@ -356,7 +323,7 @@ h1 {
   font-size: 3em;
   margin: 0 0;
   padding: 0 0;
-  background-color: rgba(0, 198, 248, 0.459);
+  background-color: #000000;
   color: white;
   display: flex;
   justify-content: center; }
@@ -645,7 +612,7 @@ header {
   grid-column-end: 4; }
 
 .banner__peque1__team {
-  width: 100%;
+  width: 133%;
   height: 100%; }
 
 .imagen__about {
@@ -667,7 +634,7 @@ header {
   color: #000000; }
 
 .design {
-  font-size: 0.8em; }
+  font-size: 1.2em; }
 
 .center {
   display: flex;
@@ -685,26 +652,48 @@ header {
   width: 200%;
   height: 100%; }
 
-.imagen__blog {
+.blog__imagen {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-items: center;
-  height: 700px; }
+  height: 500px; }
+
+.imagen__blog {
+  width: 1000px;
+  height: 500px; }
 
 /* Responsive */
-@media screen and (max-width: 768px) and (min-width: 320px) {
+@media screen and (max-width: 768px) {
   header {
-    max-height: 20vh; }
+    height: auto; }
+  .nav__label {
+    display: block;
+    cursor: pointer; }
+  .menu {
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    background: #f08080;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center); }
+  .nav__input:checked + .menu__item, .nav__input:checked + .menu__item--active {
+    clip-path: circle(100% at center); }
+  .design {
+    font-size: 0.8em; }
   header .navbar {
     justify-content: center;
-    flex-direction: column;
-    min-height: 100px; }
+    flex-direction: column; }
   h1 {
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 2.5em; }
+    font-size: 2em; }
   .principal5 {
     display: grid;
     grid-template-columns: 1fr;
@@ -723,7 +712,7 @@ header {
     grid-template-columns: repeat(1, 600px);
     grid-template-rows: repeat(2, 1fr); }
   .offices__parrafo {
-    font-size: 1.3em; }
+    font-size: 0.8em; }
   .maps {
     grid-column-start: m1;
     grid-column-end: m1;
@@ -748,9 +737,6 @@ header {
     width: 400px;
     font-size: 2.5em;
     margin: 0px 10px; }
-  header .menu__item .menu__link, header .menu__item--active .menu__link,
-  header .menu__item--active .menu__link {
-    font-size: 2em; }
   .principal {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -760,7 +746,7 @@ header {
     grid-template-columns: 1fr;
     grid-gap: 0px; }
   .content {
-    font-size: 2.5em; }
+    font-size: 2em; }
   .list {
     text-align: left; }
   .content1 {
