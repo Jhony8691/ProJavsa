@@ -538,7 +538,7 @@ header {
   color: #ffffff;
   display: flex;
   align-content: center;
-  font-size: 1.5em;
+  font-size: 1em;
   padding: 0 20px; }
 
 .content2 {
@@ -687,7 +687,8 @@ header {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    gap: 0em; }
   .menu li {
     line-height: 30px;
     margin: 0px 0;
@@ -708,7 +709,8 @@ header {
   .imagen__blog {
     width: 100%; }
   header .navbar {
-    padding: 0px 0px; }
+    padding: 0px 0px;
+    gap: 0em; }
   .design {
     font-size: 0.8em; }
   h1 {
@@ -723,9 +725,9 @@ header {
   .parrafo__pagos {
     font-family: "Smooch Sans", sans-serif;
     font-size: 2em;
-    margin: 0px 125px 30px; }
+    margin: 0px 20px; }
   .icon__pagos {
-    margin: 0px 100px 0px; }
+    margin: 10px 20px; }
   .button__click1 {
     margin: 5px 170px 0px; }
   .contact1 {
@@ -742,16 +744,16 @@ header {
     width: 100%;
     height: 100%; }
   .content6 {
-    padding: 10px 20px;
     list-style-type: none;
     display: flex;
-    justify-content: center;
-    width: 400px;
-    margin: 0px 10px; }
+    justify-content: flex-start;
+    width: 300px;
+    padding: 10px 10px; }
   .content7 {
-    width: 400px;
     font-size: 2.5em;
-    margin: 0px 10px; }
+    margin: 0px 10px;
+    justify-content: flex-start;
+    width: 300px; }
   .principal {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -817,13 +819,14 @@ header {
     width: 100%;
     height: 100%; }
   .logo4__link {
-    width: 250px;
-    height: 80px;
+    width: 200px;
+    height: 50px;
     margin: 20px 20px; }
   .principal5 > div {
     background-color: #6d6d6a;
     padding: 5px 0;
-    font-size: 1.8em; }
+    font-size: 1.8em;
+    max-height: 12vh; }
   .principal6 > div {
     font-size: 1.8em;
     color: #000000; }
@@ -854,9 +857,10 @@ header {
   .box {
     padding: 2px;
     margin: 10px;
-    display: flex; }
+    display: flex;
+    width: 300px; }
   textarea {
-    width: 450px; }
+    width: 300px; }
   .text__contact {
     margin-top: 30px; }
   .copyright {
