@@ -421,6 +421,7 @@ header {
 
     .logo {
         width: 180px;
+        margin-left: 20px;
     }
 
     .nav__label {
@@ -430,11 +431,11 @@ header {
     }
 
     .nav__img {
-        height: 60px;
+        height: 50px;
     }
 
     .menu {
-        position: fixed;
+        // position: fixed;
         width: 100%;
         height: 0vh;
         top: 65px;
@@ -450,7 +451,7 @@ header {
 
     .menu li {
         line-height: 30px;
-        margin: 50px 0;
+        margin: 0px 0;
         transition: all .5s;
         display: none;
     }
@@ -462,7 +463,7 @@ header {
     }
 
     #check:checked ~ .menu {
-        height: 100vh;
+        height: 30vh;
     }
     
     #check:checked ~ .menu li {
@@ -479,8 +480,15 @@ header {
 
     .imagen__blog {
         width: 100%;
-
     }
+
+    header .navbar {
+        padding: 0px 0px;
+        // max-height: 7vh;
+    }
+
+
+
     // .menu li a.menu__link,  .menu li a:hover {
     //     // color: aqua;
     //     transition: .3s;
