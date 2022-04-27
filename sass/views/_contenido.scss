@@ -12,6 +12,7 @@ h1 {
 
 .logo {
     height: 50px;
+    margin: 10px;
 }
 
 .banner {
@@ -96,6 +97,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+    padding: 10px;
 }
 
 .principal1>div {
@@ -133,9 +135,12 @@ header {
 }
 
 .principal4 {
-    display: flex;
-}
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
 
+}
+ 
 .principal5 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -222,7 +227,6 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 50px);
     gap: 10px;
-    min-height: 0vh;
 }
 
 .principal11>div {
@@ -232,22 +236,15 @@ header {
     color: #000000;
 }
 
-.principal12 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 100px);
-    min-height: 0vh;
-    color: #000000;
-}
 
 .icon__pagos {
-    margin: 0px 225px 0px;
+    margin: 0px 0px 30px 900px;
 }
 
 .parrafo__pagos {
     font-family: $font-primary;
     font-size: 2em;
-    margin: 0px 225px 30px;
+    margin: 0px 0px 30px 900px;
 }
 
 .content {
@@ -259,15 +256,17 @@ header {
     color: $secondary;
     display: flex;
     align-content: center;
-    font-size: 1em;
+    font-size: 1.5em;
     padding: 0 20px;
 }
 
 .content2 {
     display: flex;
-    align-content: center;
     padding: 0 20px;
     background-color: #000000;
+    margin-top: -10px;
+    min-height: 10vh;
+    align-items: center;
 }
 
 .content3 {
@@ -295,14 +294,12 @@ header {
     padding: 10px 20px;
     list-style-type: none;
     display: flex;
-    justify-content: center;
-}
+    margin: 10px 250px 10px 0px;
+    }
 
 .content7 {
     font-family: $font-primary;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+    padding: 10px 20px;
 }
 
 .titulo {
@@ -314,7 +311,7 @@ header {
 
 .logo3__link {
     height: 40px;
-    margin: 0px 40px;
+    margin: 10px 40px;
 }
 
 .logo4__link {
@@ -341,13 +338,8 @@ header {
     height: 100%;
 }
 
-.banner__peque1 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
 .banner__peque1__team {
-    width: 133%;
+    width: 100%;
     height: 100%;
 }
 
@@ -380,16 +372,17 @@ header {
 .center {
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .imagen__train {
     width: 100%;
-    height: 90%;
+    height: 100%;
 }
 
 .imagen__producto {
     width: 100%;
-    height: 90%;
+    height: 100%;
 }
 
 .imagen__fin {
@@ -411,10 +404,23 @@ header {
     height: 500px;
 }
 
+.contact1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box {
+    padding: 2px;
+    margin: 10px 0px;
+    display: flex;
+    width: 500px;
+}
+
 
 /* Responsive */
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     header {
         height: auto;
     }
@@ -435,7 +441,6 @@ header {
     }
 
     .menu {
-        // position: fixed;
         width: 100%;
         height: 0vh;
         top: 65px;
@@ -485,57 +490,12 @@ header {
 
     header .navbar {
         padding: 0px 0px;
-        // max-height: 7vh;
         gap: 0em;
     }
-
-    // .menu li a.menu__link,  .menu li a:hover {
-    //     // color: aqua;
-    //     transition: .3s;
-    // }
-
-    // .navbar {
-    //     height: 100px;
-    //     width: 100%;
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    // }
-
     
-
-    // .nav__label {
-    //     display: block;
-    //     cursor: pointer;
-    // }
-
-    // .menu{
-    //     position: fixed;
-    //     top:100px;
-    //     bottom: 0;
-    //     background: #f08080;
-    //     width: 100%;
-    //     left: 0;
-    //     display: flex;
-    //     justify-content: space-evenly;
-    //     flex-direction: column;
-    //     align-items: center;
-    //     clip-path: circle(0 at center);
-    //     transition: clip-path 0.5s ease-in-out;
-    // }
-
-    // .nav__input:checked ~ .menu{
-    //     clip-path: circle(100% at center);
-    // }
-
     .design {
         font-size: 0.8em
     }
-
-    // header .navbar {
-    //     justify-content: center;
-    //     flex-direction: column;
-    // }
 
     h1 {
         flex-wrap: wrap;
@@ -559,7 +519,7 @@ header {
     }
 
     .icon__pagos {
-        margin: 10px 20px;
+        margin: 10px 0px 0px 20px;
     }
 
     .button__click1 {
@@ -567,9 +527,8 @@ header {
     }
 
     .contact1 {
-        display: grid;
-        grid-template-columns: repeat(1, 600px);
-        grid-template-rows: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
     }
 
 
@@ -582,38 +541,23 @@ header {
         grid-column-end: m1;
         grid-row-start: m3;
         grid-row-end: m3;
-        width: 100%;
+        width:100%;
         height: 100%;
     }
 
-    // .logo {
-    //     flex-grow: 1;
-    //     display: flex;
-    //     align-items: center;
-    //     height: 40px;
-    //     margin-top: 10px;
-    // }
-
-    .content6 {
+        .content6 {
         list-style-type: none;
         display: flex;
         justify-content: flex-start;
         width: 300px;
-        padding: 10px 10px;
+        margin: 0px 0px;
     }
 
     .content7 {
         font-size: 2.5em;
-        margin: 0px 10px;
         justify-content: flex-start;
         width: 300px;
     }
-
-    // header .menu__item .menu__link,
-    // header .menu__item--active .menu__link {
-    //     font-size: 2em;
-    //     padding: 0px;
-    // }
 
     .principal {
         grid-template-columns: 1fr;
@@ -637,6 +581,7 @@ header {
 
     .content1 {
         padding: 0px 10px;
+        font-size: 1em;
     }
 
     .button__click {

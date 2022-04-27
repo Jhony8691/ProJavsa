@@ -3,8 +3,7 @@ footer {
 }
 
 .social__media {
-    width: 54px;
-    padding: 00px;
+    width: 55px;
 }
 
 .social {
@@ -23,7 +22,7 @@ footer {
     color: $secondary;
     font-size: 3em;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 0 20px;
 }
 
@@ -35,19 +34,12 @@ footer {
     justify-content: center;
 }
 
-.contact1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 400px);
-    background-color: #f2f3f2;
-}
-
 .offices {
     font-family: $font-primary;
     color: $secondary;
     font-size: 3em;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 0 20px;
 }
 
@@ -55,7 +47,7 @@ footer {
     font-family: $font-primary;
     font-size: 1.8em;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin: 0 10px;
 }
 
@@ -78,9 +70,20 @@ a {
     margin: 10px 0px 0px 0px;
 }
 
-.icon {
-    width: 32px;
+.red__social {
+    display: flex;
+    justify-content: space-evenly;
 }
+
+.icon {
+    width: 40px;
+} 
+
+
+.icon:hover {
+    filter: sepia(50%);
+}
+
 
 .copyright {
     display: flex;
@@ -89,11 +92,6 @@ a {
     font-size: 1.7em;
 }
 
-.box {
-    padding: 2px;
-    margin: 10px 100px;
-    display: flex;
-}
 
 textarea {
     width: 525px;

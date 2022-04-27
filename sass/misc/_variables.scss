@@ -20,7 +20,7 @@ $images: (pmp: 'imagen__pmp',
 $value in $images {
     .imagen__#{$image} {
         width: 100%;
-        height: 90%;
+        height: 100%;
     }
 }
 
