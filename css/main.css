@@ -326,6 +326,9 @@ h1 {
   display: flex;
   justify-content: center; }
 
+body {
+  background-color: #000000; }
+
 .logo {
   height: 50px;
   margin: 10px; }
@@ -369,7 +372,8 @@ header {
   width: 100%; }
 
 .banner2__link {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 10px; }
 
 .banner2 {
   display: grid;
@@ -550,13 +554,13 @@ header {
   background-color: #000000; }
 
 .content4 {
-  color: #000000;
+  color: #ffffff;
   padding: 10px 20px;
   list-style-type: none;
   text-align: justify; }
 
 .content5 {
-  color: #000000;
+  color: #ffffff;
   padding: 10px 20px;
   list-style-type: none;
   text-align: justify; }
@@ -598,11 +602,13 @@ header {
 
 .banner__peque {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  padding: 10px; }
 
 .banner__peque1__team {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  padding: 10px; }
 
 .imagen__about {
   width: 100%;
@@ -620,7 +626,7 @@ header {
   text-decoration: none;
   margin: 0px 10px;
   font-size: 2.5em;
-  color: #000000; }
+  color: #ffffff; }
 
 .design {
   font-size: 1.2em; }
@@ -770,8 +776,9 @@ header {
     margin: 0px 0px; }
   .content7 {
     font-size: 2.5em;
-    justify-content: flex-start;
-    width: 300px; }
+    justify-content: center;
+    width: 300px;
+    font-weight: bold; }
   .principal {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -785,7 +792,7 @@ header {
   .list {
     text-align: left; }
   .content1 {
-    padding: 0px 10px;
+    padding: 10px 10px;
     font-size: 1em; }
   .button__click {
     margin: 40px 0 auto;
@@ -794,7 +801,7 @@ header {
     height: 70px; }
   .banner2__link {
     height: 180px;
-    padding: 10px; }
+    padding: 0px 10px 10px 10px; }
   .principal3 {
     display: grid;
     grid-template-columns: 1fr;
@@ -847,8 +854,8 @@ header {
   .principal5 > div {
     background-color: #6d6d6a;
     padding: 5px 0;
-    font-size: 1.8em;
-    max-height: 15vh; }
+    font-size: 1.6em;
+    max-height: 10vh; }
   .principal6 > div {
     font-size: 1.8em;
     color: #000000;
